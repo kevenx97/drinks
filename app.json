@@ -1,0 +1,26 @@
+{
+  "name": "drinks",
+  "displayName": "drinks",
+  "env": "desenv",
+  "urls": {
+    "desenv": {
+      "base": "https://www.thecocktaildb.com/api/json/v1/1",
+      "categories": {
+        "param": "/list.php?c=list",
+        "method": "get"
+      },
+      "drinks": {
+        "param": "/filter.php?c=$data",
+        "method": "get"
+      },
+      "search": {
+        "param": "/search.php?s=$data",
+        "method": "get"
+      },
+      "lookup": {
+        "param": "/lookup.php?i=$data",
+        "method": "get"
+      }
+    }
+  }
+}
